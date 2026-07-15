@@ -1,0 +1,20 @@
+# namespaces.yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: argocd
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: nexusops-dev
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: nexusops-prod
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: observability

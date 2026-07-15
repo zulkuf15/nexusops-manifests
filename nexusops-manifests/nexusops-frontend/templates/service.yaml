@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nexusops-frontend-dev-service
+  namespace: nexusops-dev
+  labels:
+    app: nexusops-frontend
+spec:
+  type: ClusterIP
+  ports:
+    - name: web
+      port: 80
+      targetPort: 80
+    - name: metrics
+      port: 9113
+      targetPort: 9113
+  selector:
+    app: nexusops-frontend

@@ -1,0 +1,19 @@
+replicaCount: 2
+
+image:
+  repository: nginx
+  tag: alpine
+
+service:
+  type: ClusterIP
+  port: 80
+
+containerPort: 80
+
+# Bugün eklenen yeni değerler
+secrets:
+  apiKey: "super-secret-nexusops-key-12345"
+
+ingress:
+  enabled: true
+  host: nexusops.local
