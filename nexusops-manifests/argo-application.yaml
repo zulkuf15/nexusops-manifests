@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/zulkuf15/nexusops-manifests.git
-    targetRevision: HEAD
+    targetRevision: main
     path: nexusops-frontend
     helm:
       valueFiles:
